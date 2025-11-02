@@ -93,22 +93,10 @@ Verified with SYSTEM$CLUSTERING_INFORMATION() that clustering depth was optimal 
 
 **Before optimization (30 days):**
 - Exported QUERY_HISTORY for our main warehouse
-- Top 10 expensive queries averaged 800 credits/day total
-- At $3 per credit = $2,400/day on these queries
-- Wait—that's wrong math. Let me recalculate properly:
-
-**Correct calculation:**
-- Top 10 queries: 120 executions/day combined
-- Cost per execution: ~$8 in credits
-- Daily cost: 120 × $8 = $960/day... that's too high.
-
-**Actually:**
 - Each query ~$0.50 in credits before optimization
 - After optimization: ~$0.15 per query
 - 120 queries/day × $0.35 savings = ~$40/day
 - Monthly: $40 × 30 = ~$1,200/month
-
-Sorry, I should have been clearer—the $8 → $2 I mentioned was hypothetical. Real per-query cost was about $0.50 → $0.15, and the volume made it add up to ~$1K/month."
 
 🎯 **Why this works:** Shows you actually measured it, and minor correction shows authenticity, not rehearsed.
 
