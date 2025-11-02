@@ -1,6 +1,6 @@
 # Snowflake Cost Optimization - $1K Monthly Savings
 
-## Main Story (90 seconds)
+## Main Story
 
 "At Karmalife, I reduced Snowflake warehouse costs by about $1,000 per month—roughly 30-40% of our compute spend.
 
