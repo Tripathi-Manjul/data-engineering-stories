@@ -2,10 +2,10 @@
 
 ## Main Story
 
-"At Karmalife, I reduced Snowflake warehouse costs by about $1,000 per month—roughly 30-40% of our compute spend.
+"At Karmalife, I reduced Snowflake warehouse costs by about $600–$800 per month (25–30% of compute spend).
 
 **The Problem:**
-Legacy queries migrated from PostgreSQL still used SELECT *, and our BI tool auto-generated queries scanning entire tables. On our 50M-row loan transactions table, these ran 100+ times daily, each costing about $8 in compute credits.
+Legacy queries migrated from PostgreSQL still used SELECT *, and our BI tool auto-generated queries scanning entire tables. On our 50M-row loan transactions table, these ran 100+ times daily, each costing about $0.50 in compute credits.
 
 **My Solution:**
 
@@ -16,9 +16,9 @@ Legacy queries migrated from PostgreSQL still used SELECT *, and our BI tool aut
 3. **Result Caching:** Enabled RESULT_SCAN for repetitive aggregations, avoiding redundant computation.
 
 **Results:**
-- Typical query cost: $8 → $2 (75% reduction)
+- Typical query cost: $3 → $1 (≈65% reduction)
 - Query performance: 45 seconds → 4 seconds (10x faster)
-- Monthly savings: ~$1,000 on warehouse compute
+- Monthly savings: ~$700 on warehouse compute
 - Pattern applied to 3 other pipelines for additional savings"
 
 ---
